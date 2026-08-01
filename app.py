@@ -11,7 +11,7 @@ from database.memory import get_user_name, set_user_name
 
 load_dotenv()
 
-st.set_page_config(page_title="Arachnid-X", page_icon="🛡️", layout="centered")
+st.set_page_config(page_title="Arachnid-X", page_icon="🕸️", layout="centered")
 
 # ---------- Session state setup ----------
 if "mode" not in st.session_state:
