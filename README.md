@@ -1,8 +1,14 @@
-# WebWarden AI
+# Arachnid-X
+
+Arachnid-X is an AI-powered dual-personality assistant built with Python and Streamlit, featuring two distinct conversational modes: Aegis and Noctis.
+
+## Live Demo
+
+https://arachnid-x.streamlit.app/
 
 Dual-personality AI companion — **Aegis** (optimistic guardian) and **Noctis**
-(dark protector) — two original characters, no Marvel IP. Built with
-Streamlit + OpenRouter.
+(dark protector) : two original characters, no Marvel IP. Built with
+Streamlit and OpenRouter.
 
 ## 1. Get your API keys
 
@@ -11,7 +17,7 @@ Streamlit + OpenRouter.
 2. Go to **Keys** → **Create Key**.
 3. Copy the key (starts with `sk-or-...`).
 
-**Groq** (for voice transcription — free tier available):
+**Groq** (for voice transcription, free tier available):
 1. Go to https://console.groq.com and sign up (free).
 2. Go to **API Keys** → **Create API Key**.
 3. Copy the key (starts with `gsk_...`).
@@ -53,9 +59,9 @@ This opens the app in your browser at `http://localhost:8501`.
 
 ## 4. Try it out
 
-- Click **AEGIS** or **NOCTIS** to switch personas — notice the whole UI
+- Click **AEGIS** or **NOCTIS** to switch personas, notice the whole UI
   theme changes, and so does the way the AI responds.
-- Type `My name is <yourname>` — it'll remember it (stored locally in
+- Type `My name is <yourname>` and it'll remember it (stored locally in
   `database/webwarden.db`) and use it later, even after you restart the app.
 - Try the same question in both modes to see the personality difference:
   - "I'm stressed about my exam."
@@ -63,7 +69,7 @@ This opens the app in your browser at `http://localhost:8501`.
 
 ## 5. Voice input & output
 
-- Click the mic widget above the text box to record a question — it gets
+- Click the mic widget above the text box to record a question, it gets
   transcribed via Groq Whisper and sent to the current persona automatically.
 - Every reply is also spoken aloud via gTTS (needs an internet connection;
   no extra key required beyond what's already in `.env`).
@@ -89,10 +95,10 @@ webwarden-ai/
 
 ## 8. Swapping the model
 
-Default model is `openrouter/free` (OpenRouter's auto-router for free models — it
+Default model is `openrouter/free` (OpenRouter's auto-router for free models, it
 adapts automatically as individual `:free` models rotate in and out). To pin
 an exact model instead, edit `DEFAULT_MODEL` in `core/llm.py`. Browse options at
-https://openrouter.ai/models — filter by `:free` if you want to stay on
+https://openrouter.ai/models : filter by `:free` if you want to stay on
 the free tier.
 
 ## 7. Next steps (V2 ideas, not built yet)
