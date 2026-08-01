@@ -1,4 +1,10 @@
-# WebWarden AI
+# Arachnid-X
+
+Arachnid-X is an AI-powered dual-personality assistant built with Python and Streamlit, featuring two distinct conversational modes: Aegis and Noctis.
+
+## Live Demo
+
+https://arachnid-x.streamlit.app/
 
 Dual-personality AI companion — **Aegis** (optimistic guardian) and **Noctis**
 (dark protector) : two original characters, no Marvel IP. Built with
@@ -73,7 +79,7 @@ This opens the app in your browser at `http://localhost:8501`.
 
 ```
 webwarden-ai/
-├── app.py                 # Streamlit UI and main app loop
+├── app.py                 # Streamlit UI + main app loop
 ├── config/
 │   └── prompts.py         # Persona definitions & system prompts
 ├── core/
@@ -92,7 +98,7 @@ webwarden-ai/
 Default model is `openrouter/free` (OpenRouter's auto-router for free models, it
 adapts automatically as individual `:free` models rotate in and out). To pin
 an exact model instead, edit `DEFAULT_MODEL` in `core/llm.py`. Browse options at
-https://openrouter.ai/models, filter by `:free` if you want to stay on
+https://openrouter.ai/models : filter by `:free` if you want to stay on
 the free tier.
 
 ## 7. Next steps (V2 ideas, not built yet)
